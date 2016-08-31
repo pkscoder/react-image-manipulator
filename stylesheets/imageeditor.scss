@@ -1,0 +1,124 @@
+._react-image-manipulation {
+    background-color: rgba(41, 48, 63, .5);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    ._cover-box {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: rgba(255, 0, 0, 0);
+        ._outer-box {
+            position: absolute;
+            background: #ffffff;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            width: 600px;
+            height: 600px;
+            ._box-header {
+                border-bottom: 1px solid #F3F3F3;
+                padding: 3%;
+                position: relative;
+                .close-btn {
+                    background-image: url(http://assets.myntassets.com/assets/images/2015/12/2/11449051311806-button-cross_sticker.png);
+                    height: 30px;
+                    width: 30px;
+                    background-size: 100% 100%;
+                    cursor: pointer;
+                    position: absolute;
+                    right: 2%;
+                    top: 0;
+                    bottom: 0;
+                    margin: auto;
+                }
+            }
+            ._box-body {
+                height: 80%;
+                position: relative;
+                text-align: center;
+                .image-manipulation-scale {
+                    position: absolute;
+                    bottom: 15px;
+                    left: 0;
+                    right: 0;
+                    width: 200px;
+                    margin: auto;
+                    padding: 12px 10px;
+                    background: #29303f;
+                    color: #ffffff;
+                    border-radius: 20px;
+                    font-size: 17px;
+                    font-family: sans-serif;
+                    cursor: pointer;
+                    input[type=range] {
+                        -webkit-appearance: none;
+                        outline: none;
+                        cursor: pointer;
+                        width: 80%;
+                        margin: auto;
+                        &::-webkit-slider-runnable-track {
+                            height: 2px;
+                            background: #ffffff;
+                            border: none;
+                        }
+                        &::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            border: none;
+                            height: 15px;
+                            width: 15px;
+                            border-radius: 50%;
+                            background: #ffffff;
+                            margin-top: -7px;
+                        }
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                    &::before,
+                    &::after {
+                        position: absolute;
+                        bottom: 0;
+                        margin: auto;
+                    }
+                    &::before {
+                        content: "_";
+                        top: -5.5px;
+                        left: 10px;
+                    }
+                    &::after {
+                        content: "+";
+                        top: 1.5px;
+                        right: 10px;
+                    }
+                    &:hover {
+                        // opacity: 0.8;
+                    }
+                }
+            }
+            ._box-footer {
+                border-top: 1px solid #F3F3F3;
+                display: table;
+                width: 95%;
+                padding: 2.7% 2.5%;
+                .image-crop-btn {
+                    display: table-cell;
+                    border-radius: 2px;
+                    background-color: #3466e8;
+                    color: white;
+                    padding: 7px 25px;
+                    cursor: pointer;
+                    width: 102px;
+                }
+            }
+        }
+    }
+}
