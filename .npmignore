@@ -11,3 +11,4 @@ index.html
 webpack.config.js
 webpack-dev-server.js
 npm-debug.log
+.DS_Store

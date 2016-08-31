@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Canvas from './utils/canvas';
-import '../stylesheets/imageeditor.scss';
+import './stylesheets/imageeditor.scss';
 
 const deviceEvents = {
     react: {
