@@ -10,7 +10,7 @@ module.exports = _.assign({}, baseConfig.commons, {
   },
   output: {
     path: path.resolve(__dirname, '..', 'lib'),
-    filename: '[name].js',
+    filename: 'index.js',
     libraryTarget: 'umd',
     library: 'ImageManipulator',
   },
